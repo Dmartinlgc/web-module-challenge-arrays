@@ -170,8 +170,16 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(array, findWord){
+    const list =[];
+    for(let index=0;index<array.length;index++){
+        if (array[index].includes(findWord)){
+            list.push(array[index]);
+        }
+
+    }
+    
+  return list   
 }
 
 
